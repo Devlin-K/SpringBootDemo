@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Boot Demo</title>
+    <script language="JavaScript">
+        function Register() {
+            document.getElementById('Login').style.display="none";
+            document.getElementById('Register').style.display="block";
+        }
+
+        function Login() {
+            document.getElementById('Login').style.display="block";
+            document.getElementById('Register').style.display="none";
+        }
+    </script>
+</head>
+<body>
+<div style="width: 100%;height: 300px;text-align: center">
+    <div style="margin-left: 100px;margin-top: 50px;border: 5px;border-color: brown">
+        已有Vip账户： <input type="button" value="Login" onclick="Login()"/><br>
+        <div id="Login" style="display: none">
+            <form id="LoginForm" name="LoginForm" action="#" th:action="@{/Login}"  method="post">
+                UserName: <input type="text" id="UserNameL" name="UserNameL"><br>
+                Password: <input type="password" id="passwordL" name="passwordL"><br>
+                <input type="submit" style="color: yellow" value="Submit" onclick="Submit()">
+            </form>
+        </div>
+        屁滚尿流去注册： <input type="button" value="Register" onclick="Register()"/>
+        <div id="Register" style="display: none">
+            <form id="RegisterForm" name="RegisterForm" action="#" th:action="@{/Save}"  method="post">
+                UserName: <input type="text" id="UserNameR" name="UserNameR"><br>
+                Password: <input type="password" id="passwordR" name="passwordR"><br>
+                Age: <input type="text" id="Age" name="Age"><br>
+                Sex: <input type="text" id="Sex" name="Sex"><br>
+                Describe: <input type="text" id="Describe" name="Describe"><br>
+                <input type="submit" style="color: yellow" value="Submit" onclick="Submit()">
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

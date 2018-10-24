@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script language="JavaScript">
+
+    </script>
+</head>
+<body>
+<p>你好，请开始测试吧！！！</p>
+当前用户：
+<table align='center' border='1' cellspacing='0'>
+<tr th:each="ps:${ps == null ? null : ps}  ">
+    <td th:text="${ps.getId()}"></td>
+    <td th:text="${ps.getUserName()}"></td>
+    <td th:text="${ps.getAge()}"></td>
+    <td th:text="${ps.getPassword()}"></td>
+    <td></td>
+</tr>
+</table>
+
+</body>
+</html>
