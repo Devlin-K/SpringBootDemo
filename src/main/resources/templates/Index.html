@@ -14,10 +14,14 @@
             document.getElementById('Register').style.display="none";
         }
     </script>
+    <link rel="stylesheet" type="text/css" th:href="../static/BorderAnimationSVG/css/component.css">
+    <link rel="stylesheet" type="text/css" th:href="../static/BorderAnimationSVG/css/demo.css">
+    <link rel="stylesheet" type="text/css" th:href="../static/BorderAnimationSVG/css/normalize.css">
 </head>
 <body>
+<script color="0,0,0" opacity="0.5" count="150" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js" type="text/javascript" charset="utf-8"></script>
 <div style="width: 100%;height: 300px;text-align: center">
-    <div style="margin-left: 100px;margin-top: 50px;border: 5px;border-color: brown">
+    <div style="margin-left: 400px;margin-top: 150px;border: solid;border-color: black;width: 300px;height: 400px;">
         已有Vip账户： <input type="button" value="Login" onclick="Login()"/><br>
         <div id="Login" style="display: none">
             <form id="LoginForm" name="LoginForm" action="#" th:action="@{/Login}"  method="post">
@@ -36,6 +40,17 @@
                 Describe: <input type="text" id="Describe" name="Describe"><br>
                 <input type="submit" style="color: yellow" value="Submit" onclick="Submit()">
             </form>
+        </div>
+        <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                <line class="bottom" x1="300" y1="460" x2="-600" y2="460"/>
+                <line class="right" x1="300" y1="0" x2="300" y2="1380"/>
+            </svg>
+            <h3>D</h3>
+            <span>2012</span>
+            <span>Broccoli, Asparagus, Curry</span>
         </div>
 
     </div>

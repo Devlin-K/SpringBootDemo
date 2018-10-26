@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-    <script language="JavaScript">
-
-    </script>
 </head>
 <body>
 <p>你好，请开始测试吧！！！</p>
 当前用户：
 <table align='center' border='1' cellspacing='0'>
-<tr th:each="ps:${ps == null ? null : ps}  ">
-    <td th:text="${ps.getId()}"></td>
-    <td th:text="${ps.getUserName()}"></td>
-    <td th:text="${ps.getAge()}"></td>
-    <td th:text="${ps.getPassword()}"></td>
+<tr th:each="per:${ps == null ? null : ps}  ">
+    <td th:text="${per.getId()}"></td>
+    <td th:text="${per.getUserName()}"></td>
+    <td th:text="${per.getAge()}"></td>
+    <td th:text="${per.getPassword()}"></td>
     <td></td>
 </tr>
 </table>

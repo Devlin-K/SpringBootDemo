@@ -73,6 +73,11 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.28</version>
         </dependency>
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>neko-htmlunit</artifactId>
+            <version>2.21</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -87,6 +92,47 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>
+                        **/*.xml
+                    </include>
+                    <include>
+                        **/*.css
+                    </include>
+                    <include>
+                        **/*.woff
+                    </include>
+                    <include>
+                        **/*.md
+                    </include>
+                    <include>
+                        **/*.eot
+                    </include>
+                    <include>
+                        **/*.svg
+                    </include>
+                    <include>
+                        **/*.js
+                    </include>
+                    <include>
+                        **/*.properties
+                    </include>
+                    <include>
+                        **/*.yml
+                    </include>
+                    <include>
+                        **/*.html
+                    </include>
+                    <include>
+                        **/*.txt
+                    </include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 
