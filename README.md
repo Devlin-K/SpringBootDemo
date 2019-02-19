@@ -1,2 +1,2 @@
 # SpringBootDemo
-A Simple SqpringBoot Demo For Test
+A Simple SpringBoot Demo For Test
